@@ -1,6 +1,6 @@
 # Item & XP Magnet
 
-### [Official download page](google.com)
+### [Official download page](https://www.planetminecraft.com/mod/item-amp-xp-magnet/)
 
 ## Description
 When active, all items or XP within 8 blocks will teleport to the player.
