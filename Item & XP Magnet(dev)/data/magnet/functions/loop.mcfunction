@@ -22,6 +22,9 @@ execute as @e[type=minecraft:item,nbt={Age:0s},nbt=!{Thrower:{}}] at @s if block
 execute as @e[type=minecraft:item,nbt={Age:0s},nbt=!{Thrower:{}}] at @s if entity @e[type=minecraft:hopper_minecart,distance=..3] run data merge entity @s {Age:1s}
 execute as @e[type=minecraft:item,nbt={Age:0s},nbt=!{Thrower:{}}] at @s if entity @e[type=minecraft:chest_minecart,distance=..3] run data merge entity @s {Age:1s}
 
+# Disable Pickup Delay for items to teleport
+execute as @a[scores={Magnet_Item=2}] run execute as @e[type=minecraft:item,nbt={Age:0s},nbt=!{Thrower:{}},distance=..8] run data merge entity @s {PickupDelay:0s}
+
 # Teleport items
 execute as @e[type=minecraft:item,nbt={Age:0s},nbt=!{Thrower:{}}] at @s run tp @p[scores={Magnet_Item=2},distance=..8]
 
