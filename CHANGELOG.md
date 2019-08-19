@@ -1,4 +1,4 @@
-### Changelog
+# Changelog
 
 ## [1.0.1] - 2019-08-17
 ### Changed
